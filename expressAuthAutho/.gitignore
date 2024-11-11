@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+.idea/
+.vscode/
+*.swp
+
+# Debug
+*.log
+
+# Exclude build files during development, but include for production
+dist/
+build/
