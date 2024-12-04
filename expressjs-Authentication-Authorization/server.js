@@ -1,5 +1,4 @@
 import express from 'express';
-import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import { router } from './route/userRoute.js';
 import cookieParser from 'cookie-parser';
@@ -19,4 +18,4 @@ app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
 
-import './controller/unVerifiedUser.js';
+import './controller/removeUnverifiedUser.js';
