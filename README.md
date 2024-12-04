@@ -69,7 +69,7 @@ env
 - EMAIL= your-email
 
 ##### Setting Up SendGrid
-Create a SendGrid Account:
+Create a SendGrid Account [here](https://signup.sendgrid.com/) if you don't have:
 
 Go to SendGrid and sign up for a free account.
 
