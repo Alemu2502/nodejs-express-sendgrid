@@ -47,27 +47,26 @@ This project demonstrates the development of a robust RESTful API with comprehen
 2. npm or yarn
 3. MongoDB
 
-##### SendGrid account for email functionality
-
 Installation
 Clone the repository
 
 git clone https://github.com/Alemu2502/nodejs-express-sendgrid.git
-Navigate to the project directory
+- Navigate to the project directory
 
 cd nodejs-express-sendgrid
-Install dependencies
+-Install dependencies
 
 npm install
-Set up environment variables
+
+-Set up environment variables
 
 Create a .env file in the root directory and add the following:
 
 env
-MONGO_URL=<your-mongodb-url>
-SECRET_KEY=<your-secret-key>
-SENDGRID_API_KEY=<your-sendgrid-api-key>
-EMAIL=<your-email>
+- MONGO_URL=<your-mongodb-url>
+- SECRET_KEY=<your-secret-key>
+- SENDGRID_API_KEY=<your-sendgrid-api-key>
+- EMAIL=<your-email>
 
 ##### Setting Up SendGrid
 Create a SendGrid Account:
@@ -91,7 +90,7 @@ npm start
 The server will be running at http://localhost:3000
 
 # API Endpoints
-##### User Authentication and Management
+1. ##### User Authentication and Management
 POST /users/register: Register a new user and send email verification
 
 POST /users/login: Login a user
@@ -102,7 +101,7 @@ POST /users/reset-password/:token: Reset password using token
 
 POST /users/verify-email/:token: Verify user email
 
-##### Task Management
+2. ##### Task Management
 GET /tasks: Retrieve all tasks
 
 POST /tasks: Create a new task
@@ -113,10 +112,10 @@ PATCH /tasks/:taskId: Edit a task by ID
 
 DELETE /tasks/:taskId: Delete a task by ID
 
-##### Protected Routes
+3. ##### Protected Routes
 GET /users/protected: Access a protected route (requires authentication)
 
-##### Role-Based Access Control (RBAC)
+4. ##### Role-Based Access Control (RBAC)
 POST /admin/create-user: Admin creates a new user (requires Admin role)
 
 DELETE /admin/delete-user/:_id: Admin deletes a user (requires Admin role)
@@ -128,7 +127,7 @@ GET /user/view-user: View user details (requires Admin, Editor, or User role)
 # Testing via Postman
 To test the API, use Postman or any API testing tool to make requests to the endpoints. Here are some example requests:
 
-##### User Registration
+1. ##### User Registration
 URL: http://localhost:3000/users/register
 
 Method: POST
@@ -144,7 +143,7 @@ json
   "role": "User"
 }
 
-##### User Login
+2. ##### User Login
 URL: http://localhost:3000/users/login
 
 Method: POST
@@ -157,7 +156,7 @@ json
   "password": "password123"
 }
 
-##### Forgot Password
+3. ##### Forgot Password
 URL: http://localhost:3000/users/forgot-password
 
 Method: POST
@@ -169,7 +168,7 @@ json
   "email": "alemu@example.com"
 }
 
-##### Reset Password
+4. ##### Reset Password
 URL: http://localhost:3000/users/reset-password/<token>
 
 Method: POST
@@ -182,7 +181,7 @@ json
   "confirmPassword": "newpassword123"
 }
 
-##### Verify Email
+5. ##### Verify Email
 URL: http://localhost:3000/users/verify-email/<token>
 
 **Method: POST**
