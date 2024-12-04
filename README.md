@@ -11,8 +11,8 @@ Table of Contents
 9. [Cron Jobs](#cron-jobs)
 10. [Contribution](#contribution)
 11. [Contact](#contact)
-12. [License](license)
-13. [Conclusion](conclusion)
+12. [License](#license)
+13. [Conclusion](#conclusion)
 
 # Overview
 
@@ -36,8 +36,8 @@ This project demonstrates the development of a robust RESTful API with comprehen
 
 # Security
 
-**bcrypt:** Password encryption
-**jsonwebtoken:** JWT handling
+**bcrypt:** Password encryption </br />
+**jsonwebtoken:** JWT handling</br />
 **cookie-parser:** Secure cookie handling
 
 # Getting Started
@@ -52,10 +52,10 @@ This project demonstrates the development of a robust RESTful API with comprehen
 Installation
 Clone the repository
 
-git clone https://github.com/<your-username>/<your-repo>.git
+git clone https://github.com/Alemu2502/nodejs-express-sendgrid.git
 Navigate to the project directory
 
-cd <your-repo>
+cd nodejs-express-sendgrid
 Install dependencies
 
 npm install
@@ -68,7 +68,8 @@ MONGO_URL=<your-mongodb-url>
 SECRET_KEY=<your-secret-key>
 SENDGRID_API_KEY=<your-sendgrid-api-key>
 EMAIL=<your-email>
-Setting Up SendGrid
+
+##### Setting Up SendGrid
 Create a SendGrid Account:
 
 Go to SendGrid and sign up for a free account.
@@ -136,8 +137,8 @@ Body:
 
 json
 {
-  "name": "John Doe",
-  "email": "john@example.com",
+  "name": "Alemu Molla",
+  "email": "alemu@example.com",
   "password": "password123",
   "passwordCheck": "password123",
   "role": "User"
@@ -152,7 +153,7 @@ Body:
 
 json
 {
-  "email": "john@example.com",
+  "email": "alemu@example.com",
   "password": "password123"
 }
 
@@ -165,7 +166,7 @@ Body:
 
 json
 {
-  "email": "john@example.com"
+  "email": "alemu@example.com"
 }
 
 ##### Reset Password
