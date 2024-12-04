@@ -36,9 +36,9 @@ This project demonstrates the development of a robust RESTful API with comprehen
 
 # Security
 
-**bcrypt:** Password encryption </br />
-**jsonwebtoken:** JWT handling</br />
-**cookie-parser:** Secure cookie handling
+1. **bcrypt:** Password encryption 
+2. **jsonwebtoken:** JWT handling
+3. **cookie-parser:** Secure cookie handling
 
 # Getting Started
 
