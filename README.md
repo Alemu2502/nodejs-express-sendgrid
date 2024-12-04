@@ -63,10 +63,10 @@ npm install
 Create a .env file in the root directory and add the following:
 
 env
-- MONGO_URL=<your-mongodb-url>
-- SECRET_KEY=<your-secret-key>
-- SENDGRID_API_KEY=<your-sendgrid-api-key>
-- EMAIL=<your-email>
+- MONGO_URL= your-mongodb-url
+- SECRET_KEY= your-secret-key
+- SENDGRID_API_KEY= your-sendgrid-api-key
+- EMAIL= your-email
 
 ##### Setting Up SendGrid
 Create a SendGrid Account:
