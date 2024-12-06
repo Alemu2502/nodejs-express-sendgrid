@@ -97,7 +97,7 @@ POST ```/users/login```: Login a user
 
 POST ```/users/forgot-password```: Request password reset
 
-POST ```/users/reset-password/:token``: Reset password using token
+POST ```/users/reset-password/:token```: Reset password using token
 
 POST ```/users/verify-email/:token```: Verify user email
 
