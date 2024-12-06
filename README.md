@@ -87,48 +87,48 @@ Copy the generated API key and add it to your .env file as SENDGRID_API_KEY.
 Start the development server
 
 npm start
-The server will be running at http://localhost:3000
+The server will be running at ```http://localhost:3000```
 
 # API Endpoints
 1. ##### User Authentication and Management
-POST /users/register: Register a new user and send email verification
+POST ```/users/register```: Register a new user and send email verification
 
-POST /users/login: Login a user
+POST ```/users/login```: Login a user
 
-POST /users/forgot-password: Request password reset
+POST ```/users/forgot-password```: Request password reset
 
-POST /users/reset-password/:token: Reset password using token
+POST ```/users/reset-password/:token``: Reset password using token
 
-POST /users/verify-email/:token: Verify user email
+POST ```/users/verify-email/:token```: Verify user email
 
 2. ##### Task Management
-GET /tasks: Retrieve all tasks
+GET ```/tasks```: Retrieve all tasks
 
-POST /tasks: Create a new task
+POST ```/tasks```: Create a new task
 
-GET /tasks/:taskId: Retrieve a task by ID
+GET ```/tasks/:taskId```: Retrieve a task by ID
 
-PATCH /tasks/:taskId: Edit a task by ID
+PATCH ```/tasks/:taskId```: Edit a task by ID
 
-DELETE /tasks/:taskId: Delete a task by ID
+DELETE ```/tasks/:taskId```: Delete a task by ID
 
 3. ##### Protected Routes
-GET /users/protected: Access a protected route (requires authentication)
+GET ```/users/protected```: Access a protected route (requires authentication)
 
 4. ##### Role-Based Access Control (RBAC)
-POST /admin/create-user: Admin creates a new user (requires Admin role)
+POST ```/admin/create-user```: Admin creates a new user (requires Admin role)
 
-DELETE /admin/delete-user/:_id: Admin deletes a user (requires Admin role)
+DELETE ```/admin/delete-user/:_id```: Admin deletes a user (requires Admin role)
 
-PATCH /editor/update-user/:_id: Editor updates a user (requires Editor role)
+PATCH ```/editor/update-user/:_id```: Editor updates a user (requires Editor role)
 
-GET /user/view-user: View user details (requires Admin, Editor, or User role)
+GET ```/user/view-user```: View user details (requires Admin, Editor, or User role)
 
 # Testing via Postman
 To test the API, use Postman or any API testing tool to make requests to the endpoints. Here are some example requests:
 
 1. ##### User Registration
-URL: http://localhost:3000/users/register
+URL: ```http://localhost:3000/users/register```
 
 Method: POST
 
@@ -144,7 +144,7 @@ json
 }
 
 2. ##### User Login
-URL: http://localhost:3000/users/login
+URL: ```http://localhost:3000/users/login```
 
 Method: POST
 
@@ -157,7 +157,7 @@ json
 }
 
 3. ##### Forgot Password
-URL: http://localhost:3000/users/forgot-password
+URL: ```http://localhost:3000/users/forgot-password```
 
 Method: POST
 
@@ -169,7 +169,7 @@ json
 }
 
 4. ##### Reset Password
-URL: http://localhost:3000/users/reset-password/<token>
+URL: ```http://localhost:3000/users/reset-password/<token>```
 
 Method: POST
 
@@ -182,12 +182,12 @@ json
 }
 
 5. ##### Verify Email
-URL: http://localhost:3000/users/verify-email/<token>
+URL: ```http://localhost:3000/users/verify-email/<token>```
 
 **Method: POST**
 
 **Check Server Health**
-URL: http://localhost:3000/health
+URL: ```http://localhost:3000/health```
 
 Method: GET
 
